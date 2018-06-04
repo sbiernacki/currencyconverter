@@ -25,9 +25,10 @@ repositories {
 
 
 dependencies {
+    compile "org.projectlombok:lombok:1.16.20"
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databi' + 'nd', version: '2.9.5'
     compile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.31'
     runtime('org.springframework.boot:spring-boot-devtools')
     testCompile('org.springframework.boot:spring-boot-starter-test')
