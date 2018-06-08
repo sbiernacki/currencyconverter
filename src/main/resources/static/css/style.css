@@ -1,0 +1,145 @@
+body
+{
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+h1, h2
+{
+    text-align: center;
+}
+
+.form
+{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.form-group
+{
+    margin: 20px 0;
+}
+
+label, .form-group
+{
+    margin-bottom: 5px;
+}
+
+.header
+{
+    border-bottom: solid 2px black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: #098700;
+}
+
+.header a
+{
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 40%;
+    border: 2px solid #222;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th
+{
+    font-size: 1.2em;
+    border-bottom: 2px solid #222;
+    color: white;
+    background-color: #098700;
+    padding: 10px;
+}
+
+tr
+{
+    border-bottom: 1px solid #222;
+}
+
+td
+{
+    border-left: 1px solid #222;
+    padding: 10px;
+}
+
+.checkbox
+{
+    margin-left: 15px;
+}
+
+label
+{
+    font-weight: bold;
+    display: block;
+}
+
+.result
+{
+    text-align: center;
+}
+
+.about
+{
+    margin: 0 40px;
+}
+
+button
+{
+    font-size: 16px;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+#submit
+{
+    border: 2px solid #098700;
+    color: #098700;
+    background-color: white;
+}
+
+#submit:hover
+{
+    color: white;
+    background-color: #098700;
+}
+
+#reset
+{
+    border: 2px solid #222;
+    color: #222;
+    background-color: white;
+}
+
+#reset:hover
+{
+    background-color: #222;
+    color: white;
+}
+
+.footer
+{
+    text-align: center;
+}
+
+#error
+{
+    color: red;
+}
