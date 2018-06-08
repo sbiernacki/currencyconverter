@@ -1,4 +1,4 @@
-package com.biernat.currencyconverter;
+package com.biernat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,9 +1,9 @@
-package com.biernat.currencyconverter.controller;
+package com.biernat.controller;
 
-import com.biernat.currencyconverter.model.ConversionData;
-import com.biernat.currencyconverter.model.DataSet;
-import com.biernat.currencyconverter.model.SupportedCurrencies;
-import com.biernat.currencyconverter.service.converter.CurrencyConverterService;
+import com.biernat.model.ConversionData;
+import com.biernat.model.DataSet;
+import com.biernat.model.SupportedCurrencies;
+import com.biernat.service.converter.CurrencyConverterService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

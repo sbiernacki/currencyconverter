@@ -1,6 +1,6 @@
-package com.biernat.currencyconverter.repository;
+package com.biernat.repository;
 
-import com.biernat.currencyconverter.model.Currency;
+import com.biernat.model.Currency;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;

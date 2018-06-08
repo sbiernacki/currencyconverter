@@ -1,7 +1,7 @@
-package com.biernat.currencyconverter.config;
+package com.biernat.config;
 
-import com.biernat.currencyconverter.service.creator.DataSetCreatorService;
-import com.biernat.currencyconverter.service.creator.DataSetCreatorServiceImpl;
+import com.biernat.service.creator.DataSetCreatorService;
+import com.biernat.service.creator.DataSetCreatorServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

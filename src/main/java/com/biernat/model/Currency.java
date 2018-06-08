@@ -1,4 +1,4 @@
-package com.biernat.currencyconverter.model;
+package com.biernat.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

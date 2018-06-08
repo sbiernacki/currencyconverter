@@ -1,4 +1,4 @@
-package com.biernat.currencyconverter.controller;
+package com.biernat.controller;
 
 import com.gargoylesoftware.htmlunit.WebClient;
 import org.hamcrest.Matchers;

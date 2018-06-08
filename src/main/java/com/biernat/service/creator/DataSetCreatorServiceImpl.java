@@ -1,7 +1,7 @@
-package com.biernat.currencyconverter.service.creator;
+package com.biernat.service.creator;
 
-import com.biernat.currencyconverter.model.Currency;
-import com.biernat.currencyconverter.model.DataSet;
+import com.biernat.model.Currency;
+import com.biernat.model.DataSet;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

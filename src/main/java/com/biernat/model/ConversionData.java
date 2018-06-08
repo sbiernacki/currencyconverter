@@ -1,4 +1,4 @@
-package com.biernat.currencyconverter.model;
+package com.biernat.model;
 
 import lombok.Data;
 

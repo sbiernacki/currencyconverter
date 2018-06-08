@@ -1,4 +1,4 @@
-package com.biernat.currencyconverter.config;
+package com.biernat.config;
 
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
