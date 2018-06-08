@@ -29,15 +29,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class HomeControllerTest
 {
     @Autowired
-    private WebApplicationContext wac;
+    private WebApplicationContext context;
     private MockMvc mockMvc;
     private WebClient webClient;
     
     @Before
     public void setup()
     {
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
-        this.webClient = MockMvcWebClientBuilder.webAppContextSetup(wac).build();
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
+        this.webClient = MockMvcWebClientBuilder.webAppContextSetup(context).build();
     }
     
     @After
@@ -78,5 +78,14 @@ public class HomeControllerTest
                     .andDo(print())
                     .andExpect(status().isFound())
                     .andExpect(redirectedUrl("/result"));
+    }
+    
+    @Test
+    public void shouldReturnAboutView() throws Exception
+    {
+        this.mockMvc.perform(get("/about"))
+                    .andDo(print())
+                    .andExpect(status().isOk())
+                    .andExpect(view().name("about"));
     }
 }
