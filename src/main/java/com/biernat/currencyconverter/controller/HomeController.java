@@ -41,4 +41,10 @@ public class HomeController
         
         return "result";
     }
+    
+    @GetMapping("/about")
+    public String about()
+    {
+        return "about";
+    }
 }
