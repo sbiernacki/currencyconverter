@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Conversion results</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<div th:replace="fragments/header"></div>
+<div class="result">
+    <h2>Conversation results</h2>
+    <label th:text="'Base currency: ' + ${dataSet.getBaseCurrencyCode()}"></label>
+    <label th:text="'Amount: ' + ${#numbers.formatDecimal(dataSet.getAmount(),0,2)}"></label>
+    <table>
+        <tr>
+            <th scope="col">Currency</th>
+            <th scope="col">Ratio</th>
+        </tr>
+        <tr th:each="rate : ${dataSet.rates.entrySet()}">
+            <td th:text="${rate.getKey()}"></td>
+            <td th:text="${#numbers.formatDecimal(rate.getValue(),1,2)}"></td>
+        </tr>
+    </table>
+    <a th:href="@{/home}">Return to main page</a>
+</div>
+<div th:replace="fragments/footer"></div>
+</body>
+</html>
