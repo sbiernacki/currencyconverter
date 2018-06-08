@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>About</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<div th:replace="fragments/header"></div>
+<div class="about">
+    <h2>About</h2>
+    <p>Simple web app written in purpose of learning basics of Spring MVC framework.</p>
+    <p>
+        Source code of application is available for preview on
+        <a href="https://github.com/sbiernacki/currencyconverter">github</a>.
+    </p>
+    <h3>Built with</h3>
+    <ul>
+        <li><a href="https://projects.spring.io/spring-framework/">Spring MVC</a></li>
+        <li><a href="https://projects.spring.io/spring-boot/">Spring Boot</a></li>
+        <li><a href="https://fixer.io/">fixer.io</a></li>
+    </ul>
+    <a th:href="@{/home}">Return to homepage</a>
+    <div th:replace="fragments/footer"></div>
+</div>
+</body>
+</html>
