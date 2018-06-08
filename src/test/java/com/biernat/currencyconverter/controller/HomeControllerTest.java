@@ -62,7 +62,6 @@ public class HomeControllerTest
                     .andExpect(model().attributeExists("conversionData", "supportedCurrencies"))
                     .andExpect(model().attribute("conversionData", hasProperty("baseCurrencyCode", Matchers.is("EUR"))))
                     .andExpect(model().attribute("conversionData", hasProperty("amount", Matchers.is(1.0))));
-//            .andExpect(model().attribute("conversionData", hasProperty("baseCurrencyCode", isEmptyOrNullString())));
     }
     
     @Test
@@ -74,7 +73,8 @@ public class HomeControllerTest
                                  .param("amount", "1.0")
                                  .param("targetCurrencyCodes", "EUR")
                                  .param("targetCurrencyCodes", "PLN")
-                                 .param("targetCurrencyCodes", "USD"))
+                                 .param("targetCurrencyCodes", "USD")
+                                 .param("targetCurrencyCodes", "GBP"))
                     .andDo(print())
                     .andExpect(status().isFound())
                     .andExpect(redirectedUrl("/result"));
